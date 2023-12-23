@@ -10,3 +10,96 @@ body {
 }
 
 /* Add styles here! */
+:root {
+  /* Colors */
+  --green: hsl(160deg, 100%, 30%);
+  --lighter-gold: hsl(45deg, 100%, 50%);
+  --darker-gold: hsl(45deg, 100%, 40%);
+  --black: hsl(0deg, 0%, 0%);
+  --very-dark: hsl(0deg, 0%, 10%);
+  --dark: hsl(0deg, 0%, 30%);
+  --medium: hsl(0deg, 0%, 40%);
+  --light: hsl(0deg, 0%, 60%);
+  --white: hsl(0deg, 0%, 100%);
+
+  /* Space */
+  --space-xs: 8px;
+  --space-s: 16px;
+  --space-m: 24px;
+  --space-l: 32px;
+  --space-xl: 48px;
+  --space-2xl: 64px;
+  --space-3xl: 96px;
+  --space-4xl: 128px;
+
+  /* Font size */
+  --font-s: 1rem;
+  --font-m: 1.25rem;
+  --font-l: 1.5rem;
+  --font-xl: 2rem;
+}
+
+header {
+  padding-block: var(--space-3xl) var(--space-2xl);
+}
+
+p {
+  margin: 0;
+  font-size: var(--font-m);
+  line-height: 1.5;
+}
+
+p:first-of-type {
+  padding-block-end: var(--space-s);
+}
+
+strong {
+  color: var(--green);
+}
+
+main {
+  background-color: var(--medium); 
+  padding-block: var(--space-2xl);
+}
+
+.max-width-wrapper {
+  max-width: 800px;
+  margin-inline: auto;
+}
+
+.border-end {
+  border-block-end: var(--space-xs) solid var(--light);
+}
+
+.intro-chunk {
+  padding-inline: var(--space-m);
+}
+
+.intro-chunk p {
+  max-width: 415px;
+}
+
+.title {
+  font-size: var(--font-xl);
+  margin: 0;
+  padding-block-end: var(--space-xl)
+}
+
+.card {
+  padding: var(--space-m);
+  background-color: var(--white);
+}
+
+.card p:first-of-type {
+  padding-block: var(--space-s); 
+}
+
+.indented-heading {
+  width: fit-content;
+  margin: 0;
+  margin-block-start: calc(var(--space-s) * -1);
+  margin-inline-start: calc(var(--space-l) * -1);
+  padding: var(--space-s) var(--space-l);
+  background-color: var(--lighter-gold);
+  border-color: var(--darker-gold);
+}
